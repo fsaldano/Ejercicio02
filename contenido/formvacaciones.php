@@ -27,7 +27,7 @@ and open the template in the editor.
             <div id="titulo"></div>
             <div id="menu"><?php include('../menu.php');?></div>
                     <div id="contenido">
-                        <form class="vacaciones form-horizontal" action="../lib/recepcionvacaciones.php" method="get">
+                        <form class="vacaciones form-horizontal" action="../lib/recepcionvacaciones.php" method="post">
                             <div class="form-group"> 
                                 <label class="col-sm-2 control-label">Rut:</label> 
                                 <div class="col-sm-10">
@@ -44,8 +44,9 @@ and open the template in the editor.
                     </div>
         </div>
         <pre>
-        <?php
-        var_dump($_SESSION["regvacacion"]);
+        <?php        
+        
+            var_dump($_SESSION["regvacacion"]);
         ?>
         </pre>
     </body>
